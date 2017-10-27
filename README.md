@@ -42,8 +42,9 @@ let textArr = ["My liege, and madam, to expostulate",
 - When the uses presses return, display **Invalid Name** if they type in any name other than "Romeo", "Benvolio" or "Mercutio".
 - If the user enters in a correct name, hide the **Invalid Name** message
 - Your handling should be case insensitive for names ("ROMEO", "roMEo", and "romeo" all are valid)
-- When the user types in Romeo, Benvolio or Mercutio display all the corresponding text for that character in a textview. 
-- See the gif below: 
+- When the user types in Romeo, Benvolio or Mercutio and presses return, display all the corresponding text for that character in a textview.
+- When the user presses return, dismiss the keyboard.
+- See the gif below (keyboard not pictured): 
 
 ![](https://media.giphy.com/media/3o7aCVyCpcpLIQybZu/giphy.gif)
 
