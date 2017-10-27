@@ -1,24 +1,30 @@
 # AC-iOS-Unit2MidUnit
 Unit 2 Mid-Unit Assessment
 
-# These violent delights have violent ends
+
+## Section Zero: Github
+
+- Fork this repository.
+- Clone it to your machine
+- Complete the sections below
+- Add, commit and push your changes
+- Create a pull request from your fork back to the original repo here
+- Paste the link to your fork into Canvas
 
 
+## Section One: Polonius Monologue
 
-### Exercise Polonius Monologue
+Using the provided dataset, ```textArr``` in the PoloniusMonolueModel class,  display the next line in the monologue when the **Next Line** button is pressed. Display the text in a textview. 
 
-## Level 1
-There are two parts for this assignment. Your first task is to take the provided dataset, ```textArr```, and display the next line in the monologue when the **Next Line** button is pressed. Display the text in a textview. 
-## Level 2 
 Once the monologue is complete, start the speech over from the beginning. Match the UI Design on the gif. 
 
 
 ![](https://media.giphy.com/media/3o7aCXpsXEhOhwQan6/giphy.gif)
 
-### Data
+<details>
+<summary>Data included in the provided PoloniusMonolueModel class</summary>
 
 ```swift
-
 let textArr = ["My liege, and madam, to expostulate",
                  "What majesty should be, what duty is,",
                  "What day is day, night night, and time is time,",
@@ -27,25 +33,21 @@ let textArr = ["My liege, and madam, to expostulate",
                  "And tediousness the limbs and outward flourishes,",
                  "I will be brief. Your noble son is mad."
                 ]
-
-
 ```
+</details>
 
+## Section Two: Romeo and Juliet: Scene IV
 
-### Exercise Romeo and Juliet: Scene IV
-
-## Level 1
-Give the textfield the default text "Enter Romeo, Benvolio or Mercutio"
-
-## Level 2 
-Display the **Invalid Name** label when the user types in a name other than Romeo, Benvolio or Mercutio in the textfield. Hide the **Invalid Name** label when the correct names are typed in. Keep in mind the user might type the names in uppercase, lowercase or LiKe ThiS. 
-
-## Level 3 
-When the user types in Romeo, Benvolio or Mercutio display all the corresponding text for that character in a textview. Match the UI Design on the gif. 
+- Create a text field with default text "Enter Romeo, Benvolio or Mercutio"
+- When the uses presses return, display **Invalid Name** if they type in any name other than "Romeo", "Benvolio" or "Mercutio".
+- If the user enters in a correct name, hide the **Invalid Name** message
+- Your handling should be case insensitive for names ("ROMEO", "roMEo", and "romeo" all are valid)
+- When the user types in Romeo, Benvolio or Mercutio display all the corresponding text for that character in a textview. 
 
 ![](https://media.giphy.com/media/3o7aCVyCpcpLIQybZu/giphy.gif)
 
-### Data
+<details>
+<summary>Data included in the provided RomeoAndJulietModel class</summary>
 
 ```swift
 let scene4Array = [
@@ -110,5 +112,13 @@ let scene4Array = [
         Too rude, too boisterous, and it pricks like thorn.
         """
         ]
-
 ```
+
+</details>
+
+## Section Three: Autolayout
+
+- Add Auto Layout constraints to your view.  
+- It must have a consistent UI on phones from the iPhone 4 to the iPhone 8+
+- It does not need to support rotation
+
