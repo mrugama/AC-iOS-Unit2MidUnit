@@ -14,9 +14,9 @@ Unit 2 Mid-Unit Assessment
 
 ## Section One: Polonius Monologue
 
-Using the provided dataset, ```textArr``` in the PoloniusMonolueModel class,  display the next line in the monologue when the **Next Line** button is pressed. Display the text in a textview. 
-
-Once the monologue is complete, start the speech over from the beginning. Match the UI Design on the gif. 
+- Using the provided dataset, ```textArr``` in the PoloniusMonolueModel class,  display the next line in the monologue when the **Next Line** button is pressed. 
+- Once the monologue is complete, start the speech over from the beginning. 
+- See the gif below: 
 
 
 ![](https://media.giphy.com/media/3o7aCXpsXEhOhwQan6/giphy.gif)
@@ -43,6 +43,7 @@ let textArr = ["My liege, and madam, to expostulate",
 - If the user enters in a correct name, hide the **Invalid Name** message
 - Your handling should be case insensitive for names ("ROMEO", "roMEo", and "romeo" all are valid)
 - When the user types in Romeo, Benvolio or Mercutio display all the corresponding text for that character in a textview. 
+- See the gif below: 
 
 ![](https://media.giphy.com/media/3o7aCVyCpcpLIQybZu/giphy.gif)
 
