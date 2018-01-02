@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     lazy var lblDisplayText: UILabel = {
         let label = UILabel(frame: CGRect.zero)
-        label.text = ""
+        label.text = " "
         label.textAlignment = .center
         return label
     }()
@@ -60,6 +60,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     lazy var txtViewDisplayMessage: UITextView = {
         let textView = UITextView(frame: CGRect.zero)
+        
         textView.textAlignment = .justified
         return textView
     }()
@@ -75,6 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         setupConstrain()
         self.view.backgroundColor = .white
         lblUserInput.delegate = self
+        txtViewDisplayMessage.backgroundColor = .yellow
     }
     
     func addSubviews() {
@@ -90,9 +92,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func setupConstrain() {
         lblTitle.translatesAutoresizingMaskIntoConstraints = false
-        lblTitle.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        lblTitle.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor).isActive = true
         lblTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        lblTitle.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        lblTitle.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         
         lblDisplayText.translatesAutoresizingMaskIntoConstraints = false
         lblDisplayText.widthAnchor.constraint(equalTo: lblTitle.widthAnchor).isActive = true
@@ -119,10 +121,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         lblInvalidMessage.topAnchor.constraint(equalTo: lblUserInput.bottomAnchor, constant: 10).isActive = true
         
         txtViewDisplayMessage.translatesAutoresizingMaskIntoConstraints = false
-        txtViewDisplayMessage.widthAnchor.constraint(equalTo: lblInvalidMessage.widthAnchor).isActive = true
+        txtViewDisplayMessage.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor).isActive = true
         txtViewDisplayMessage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         txtViewDisplayMessage.topAnchor.constraint(equalTo: lblInvalidMessage.bottomAnchor, constant: 20).isActive = true
-        txtViewDisplayMessage.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 8).isActive = true
+        txtViewDisplayMessage.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 50).isActive = true
         
     }
     
